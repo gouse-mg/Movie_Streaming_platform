@@ -2,7 +2,7 @@ import Users from "../models/user.js";
 import jwt from "jsonwebtoken";
 const secret_key = "Free Palestine"
 async function AuthenticateTheUser(req, res, next) {
-    const token = req.cookies?.user; // assuming your cookie is named 'token'
+    const token = req.cookies?.user; 
     console.log(token)
     if (!token) {
         return res.status(401).json({ error: "No token provided" });
