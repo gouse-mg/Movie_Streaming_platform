@@ -1,0 +1,27 @@
+
+
+<form action="/upload" method="POST" enctype="multipart/form-data">
+  <!-- Movie Name -->
+  <div>
+    <label for="moviename">Movie Name</label>
+    <input type="text" id="moviename" name="moviename" required />
+  </div>
+
+  <!-- Thumbnail Upload -->
+  <div>
+    <label for="thumbnail">Thumbnail</label>
+    <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required />
+  </div>
+
+  <!-- Video Upload -->
+  <div>
+    <label for="video">Video</label>
+    <input type="file" id="video" name="video" accept="video/*" required />
+  </div>
+
+  <!-- Hidden field for user who uploads -->
+  
+
+  <!-- Submit button -->
+  <button type="submit">Upload Movie</button>
+</form>
